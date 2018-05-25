@@ -10,6 +10,7 @@ namespace FluxoDeCaixa
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("OK");
         }
     }
 }
