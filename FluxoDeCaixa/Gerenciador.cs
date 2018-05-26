@@ -42,5 +42,26 @@ namespace FluxoDeCaixa
 
             return validacao;
         }
+        public Validacao RemoverRegistro(Registro registro)
+        {
+            Validacao validacao = new Validacao();
+            banco.Registros.Remove(registro);
+            banco.SaveChanges();
+            return validacao;
+        }
+        public Validacao AlterarRegistro(Registro registroAlterado)
+        {
+            Validacao validacao = new Validacao();
+            Registro registroBanco = BuscaRegistroPorId(registroAlterado.Id);
+            registroBanco.Descricao = registroAlterado.Descricao;
+            registroBanco.Valor = registroAlterado.Valor;
+            this.banco.SaveChanges();
+            return validacao;
+
+        }
+        public Registro BuscaRegistroPorId(long Id)
+        {
+            return this.banco.Registros.Where(r => r.Id == Id).FirstOrDefault();
+        }
     }
 }
