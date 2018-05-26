@@ -63,5 +63,9 @@ namespace FluxoDeCaixa
         {
             return this.banco.Registros.Where(r => r.Id == Id).FirstOrDefault();
         }
+        public List<Registro> TodosOsRegistros()
+        {
+            return this.banco.Registros.ToList();
+        }
     }
 }

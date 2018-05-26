@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27703.2000
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FluxoDeCaixa.Negocio", "FluxoDeCaixa\FluxoDeCaixa.Negocio.csproj", "{78C52DDE-109B-455D-8CFF-4AF4D5DF89C0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FluxoDeCaixa.Grafico", "FluxoDeCaixa.Grafico\FluxoDeCaixa.Grafico.csproj", "{48489B1A-A637-4931-89C0-A029103DAA20}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{78C52DDE-109B-455D-8CFF-4AF4D5DF89C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{78C52DDE-109B-455D-8CFF-4AF4D5DF89C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{78C52DDE-109B-455D-8CFF-4AF4D5DF89C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48489B1A-A637-4931-89C0-A029103DAA20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48489B1A-A637-4931-89C0-A029103DAA20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48489B1A-A637-4931-89C0-A029103DAA20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48489B1A-A637-4931-89C0-A029103DAA20}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
