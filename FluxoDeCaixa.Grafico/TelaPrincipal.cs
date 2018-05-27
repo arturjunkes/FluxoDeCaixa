@@ -82,5 +82,10 @@ namespace FluxoDeCaixa.Grafico
                 }
             }
         }
+
+        private void tbRegistros_Selected(object sender, TabControlEventArgs e)
+        {
+            CarregarRegistros();
+        }
     }
 }

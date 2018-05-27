@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tbRegistros = new System.Windows.Forms.TabControl();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tpRegistros = new System.Windows.Forms.TabPage();
             this.dgRegistros = new System.Windows.Forms.DataGridView();
@@ -38,23 +38,24 @@
             this.btRemoverRegistro = new System.Windows.Forms.Button();
             this.btAlterarRegistro = new System.Windows.Forms.Button();
             this.btAdicionarRegistro = new System.Windows.Forms.Button();
-            this.tabControl1.SuspendLayout();
+            this.tbRegistros.SuspendLayout();
             this.tpRegistros.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgRegistros)).BeginInit();
             this.SuspendLayout();
             // 
-            // tabControl1
+            // tbRegistros
             // 
-            this.tabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.tbRegistros.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Controls.Add(this.tpRegistros);
-            this.tabControl1.Location = new System.Drawing.Point(-2, 0);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(488, 337);
-            this.tabControl1.TabIndex = 0;
+            this.tbRegistros.Controls.Add(this.tabPage2);
+            this.tbRegistros.Controls.Add(this.tpRegistros);
+            this.tbRegistros.Location = new System.Drawing.Point(-2, 0);
+            this.tbRegistros.Name = "tbRegistros";
+            this.tbRegistros.SelectedIndex = 0;
+            this.tbRegistros.Size = new System.Drawing.Size(488, 337);
+            this.tbRegistros.TabIndex = 0;
+            this.tbRegistros.Selected += new System.Windows.Forms.TabControlEventHandler(this.tbRegistros_Selected);
             // 
             // tabPage2
             // 
@@ -150,11 +151,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.ClientSize = new System.Drawing.Size(483, 337);
-            this.Controls.Add(this.tabControl1);
+            this.Controls.Add(this.tbRegistros);
             this.Name = "TelaPrincipal";
             this.Text = "Fluxo de Caixa";
-            this.tabControl1.ResumeLayout(false);
+            this.tbRegistros.ResumeLayout(false);
             this.tpRegistros.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgRegistros)).EndInit();
             this.ResumeLayout(false);
@@ -163,7 +165,7 @@
 
         #endregion
 
-        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabControl tbRegistros;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.TabPage tpRegistros;
         private System.Windows.Forms.Button btRemoverRegistro;

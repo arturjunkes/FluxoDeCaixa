@@ -121,6 +121,7 @@
             this.Controls.Add(this.label1);
             this.Name = "TelaAdicionarRegisto";
             this.Text = "TelaAdicionarRegisto";
+            this.Shown += new System.EventHandler(this.TelaAdicionarRegisto_Shown);
             this.ResumeLayout(false);
             this.PerformLayout();
 

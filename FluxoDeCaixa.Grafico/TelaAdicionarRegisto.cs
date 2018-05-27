@@ -64,5 +64,14 @@ namespace FluxoDeCaixa.Grafico
         {
             this.Close();
         }
+        private void TelaAdicionarRegisto_Shown(object sender, EventArgs e)
+        {
+            if (RegistroSelecionado != null)
+            {
+                this.tbId.Text = RegistroSelecionado.Id.ToString();
+                this.tbDescricao.Text = RegistroSelecionado.Descricao;
+                this.tbValor.Text = RegistroSelecionado.Valor.ToString();
+            }
+        }
     }
 }
