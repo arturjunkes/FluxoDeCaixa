@@ -16,6 +16,7 @@ namespace FluxoDeCaixa.Grafico
         public TelaPrincipal()
         {
             InitializeComponent();
+            CarregarRegistros();
         }
 
         private void AbreTelaInclusaoAlteracao(Registro registroSelecionado)
@@ -31,9 +32,6 @@ namespace FluxoDeCaixa.Grafico
         }
         private void CarregarRegistros()
         {
-            dgRegistros.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dgRegistros.MultiSelect = false;
-            dgRegistros.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dgRegistros.AutoGenerateColumns = false;
             List<Registro> clientes = Program.Gerenciador.TodosOsRegistros();
             dgRegistros.DataSource = clientes;
@@ -85,7 +83,6 @@ namespace FluxoDeCaixa.Grafico
 
         private void tbRegistros_Selected(object sender, TabControlEventArgs e)
         {
-            CarregarRegistros();
         }
     }
 }

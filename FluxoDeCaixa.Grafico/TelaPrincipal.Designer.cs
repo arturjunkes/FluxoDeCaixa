@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaPrincipal));
             this.tbRegistros = new System.Windows.Forms.TabControl();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tpRegistros = new System.Windows.Forms.TabPage();
@@ -85,15 +86,23 @@
             // 
             this.dgRegistros.AllowUserToAddRows = false;
             this.dgRegistros.AllowUserToDeleteRows = false;
+            this.dgRegistros.AllowUserToResizeColumns = false;
+            this.dgRegistros.AllowUserToResizeRows = false;
+            this.dgRegistros.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgRegistros.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgRegistros.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgRegistros.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Id,
             this.Descricao,
             this.Valor});
             this.dgRegistros.Location = new System.Drawing.Point(7, 37);
+            this.dgRegistros.MultiSelect = false;
             this.dgRegistros.Name = "dgRegistros";
             this.dgRegistros.ReadOnly = true;
-            this.dgRegistros.Size = new System.Drawing.Size(467, 266);
+            this.dgRegistros.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgRegistros.Size = new System.Drawing.Size(467, 271);
             this.dgRegistros.TabIndex = 3;
             // 
             // Id
@@ -154,6 +163,7 @@
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.ClientSize = new System.Drawing.Size(483, 337);
             this.Controls.Add(this.tbRegistros);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "TelaPrincipal";
             this.Text = "Fluxo de Caixa";
             this.tbRegistros.ResumeLayout(false);
