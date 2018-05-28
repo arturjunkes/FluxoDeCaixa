@@ -31,7 +31,8 @@ namespace FluxoDeCaixa.Grafico
                 registro.Id = -1;
             }
             registro.Descricao = tbDescricao.Text;
-            registro.Valor = (float)Convert.ToDouble(tbValor.Text);
+            registro.Data = Convert.ToDateTime(mtbData.Text);
+            registro.Valor = (float)Convert.ToDouble(mtbValor.Text);
 
             Validacao validacao;
             if(RegistroSelecionado == null)
@@ -70,7 +71,8 @@ namespace FluxoDeCaixa.Grafico
             {
                 this.tbId.Text = RegistroSelecionado.Id.ToString();
                 this.tbDescricao.Text = RegistroSelecionado.Descricao;
-                this.tbValor.Text = RegistroSelecionado.Valor.ToString();
+                this.mtbData.Text = RegistroSelecionado.Data.ToLongDateString();
+                this.mtbValor.Text = RegistroSelecionado.Valor.ToString();
             }
         }
     }

@@ -29,6 +29,10 @@ namespace FluxoDeCaixa
             {
                 validacao.Mensagens.Add("Descrição", "O campo descrição não pode ser nulo ou vazio");
             }
+            if (String.IsNullOrEmpty(registroAdicionado.Data.ToLongDateString()))
+            {
+                validacao.Mensagens.Add("Data", "O campo data não pode ser nulo ou vazio");
+            }
             if (String.IsNullOrEmpty(registroAdicionado.Valor.ToString()))
             {
                 validacao.Mensagens.Add("Valor", "O valor não pode ser nulo ou vazio");

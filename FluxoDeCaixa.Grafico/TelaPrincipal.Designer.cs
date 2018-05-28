@@ -38,6 +38,7 @@
             this.btAdicionarRegistro = new System.Windows.Forms.Button();
             this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Descricao = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Data = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Valor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tbRegistros.SuspendLayout();
             this.tpRegistros.SuspendLayout();
@@ -92,11 +93,14 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgRegistros.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgRegistros.BackgroundColor = System.Drawing.SystemColors.ControlLight;
             this.dgRegistros.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgRegistros.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Id,
             this.Descricao,
+            this.Data,
             this.Valor});
+            this.dgRegistros.GridColor = System.Drawing.SystemColors.ControlLight;
             this.dgRegistros.Location = new System.Drawing.Point(7, 37);
             this.dgRegistros.MultiSelect = false;
             this.dgRegistros.Name = "dgRegistros";
@@ -149,6 +153,13 @@
             this.Descricao.Name = "Descricao";
             this.Descricao.ReadOnly = true;
             // 
+            // Data
+            // 
+            this.Data.DataPropertyName = "Data";
+            this.Data.HeaderText = "Data";
+            this.Data.Name = "Data";
+            this.Data.ReadOnly = true;
+            // 
             // Valor
             // 
             this.Valor.DataPropertyName = "Valor";
@@ -164,7 +175,9 @@
             this.ClientSize = new System.Drawing.Size(483, 337);
             this.Controls.Add(this.tbRegistros);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "TelaPrincipal";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Fluxo de Caixa";
             this.tbRegistros.ResumeLayout(false);
             this.tpRegistros.ResumeLayout(false);
@@ -184,6 +197,7 @@
         private System.Windows.Forms.DataGridView dgRegistros;
         private System.Windows.Forms.DataGridViewTextBoxColumn Id;
         private System.Windows.Forms.DataGridViewTextBoxColumn Descricao;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Data;
         private System.Windows.Forms.DataGridViewTextBoxColumn Valor;
     }
 }

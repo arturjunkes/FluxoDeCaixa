@@ -12,6 +12,7 @@ namespace FluxoDeCaixa.Models
     {
         public long Id { get; set; }
         public string Descricao { get; set; }
+        public DateTime Data { get; set; }
         public float Valor { get; set; }
     }
 }
