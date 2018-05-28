@@ -33,12 +33,12 @@
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tpRegistros = new System.Windows.Forms.TabPage();
             this.dgRegistros = new System.Windows.Forms.DataGridView();
-            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Descricao = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Valor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btRemoverRegistro = new System.Windows.Forms.Button();
             this.btAlterarRegistro = new System.Windows.Forms.Button();
             this.btAdicionarRegistro = new System.Windows.Forms.Button();
+            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Descricao = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Valor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tbRegistros.SuspendLayout();
             this.tpRegistros.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgRegistros)).BeginInit();
@@ -105,27 +105,6 @@
             this.dgRegistros.Size = new System.Drawing.Size(467, 271);
             this.dgRegistros.TabIndex = 3;
             // 
-            // Id
-            // 
-            this.Id.DataPropertyName = "Id";
-            this.Id.HeaderText = "Id";
-            this.Id.Name = "Id";
-            this.Id.ReadOnly = true;
-            // 
-            // Descricao
-            // 
-            this.Descricao.DataPropertyName = "Valor";
-            this.Descricao.HeaderText = "Descrição";
-            this.Descricao.Name = "Descricao";
-            this.Descricao.ReadOnly = true;
-            // 
-            // Valor
-            // 
-            this.Valor.DataPropertyName = "Valor";
-            this.Valor.HeaderText = "Valor";
-            this.Valor.Name = "Valor";
-            this.Valor.ReadOnly = true;
-            // 
             // btRemoverRegistro
             // 
             this.btRemoverRegistro.Location = new System.Drawing.Point(169, 7);
@@ -155,6 +134,27 @@
             this.btAdicionarRegistro.Text = "Adicionar";
             this.btAdicionarRegistro.UseVisualStyleBackColor = true;
             this.btAdicionarRegistro.Click += new System.EventHandler(this.btAdicionarRegistro_Click);
+            // 
+            // Id
+            // 
+            this.Id.DataPropertyName = "Id";
+            this.Id.HeaderText = "Id";
+            this.Id.Name = "Id";
+            this.Id.ReadOnly = true;
+            // 
+            // Descricao
+            // 
+            this.Descricao.DataPropertyName = "Descricao";
+            this.Descricao.HeaderText = "Descrição";
+            this.Descricao.Name = "Descricao";
+            this.Descricao.ReadOnly = true;
+            // 
+            // Valor
+            // 
+            this.Valor.DataPropertyName = "Valor";
+            this.Valor.HeaderText = "Valor";
+            this.Valor.Name = "Valor";
+            this.Valor.ReadOnly = true;
             // 
             // TelaPrincipal
             // 
